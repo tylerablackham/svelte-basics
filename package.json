@@ -1,0 +1,19 @@
+{
+  "name": "svelte-basics",
+  "version": "1.0.0",
+  "description": "learning svelte",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerablackham/svelte-basics.git"
+  },
+  "author": "Tyler Blackham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerablackham/svelte-basics/issues"
+  },
+  "homepage": "https://github.com/tylerablackham/svelte-basics#readme"
+}
