@@ -43,4 +43,8 @@ look the same.
 
 You can then navigate into the directory by running `cd new-svelte-app`, install the dependencies by running `npm install`, 
 and then start you Svelte app by running `npm run dev` or navigating to the `package.json` and clicking the button next 
-to dev. After that you can start adding your own components and exploring what can be done.
+to dev. After that, you can check out the Svelte tutorial, start adding your own components, and exploring what can be done.
+
+> **Note**
+> The project just created does not use SvelteKit, the official Svelte framework powered by Vite. There is a tutorial on
+> how to create a project that does do that found [here](https://svelte.dev/blog/svelte-for-new-developers)
