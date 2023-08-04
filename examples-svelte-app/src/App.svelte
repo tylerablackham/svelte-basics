@@ -1,12 +1,16 @@
 <script>
-	import Counter from "./reactivity.svelte"
+	import Reactivity from "./reactivity.svelte"
 	export let name;
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<Counter />
+	<h2>These components help show how reactivity works</h2>
+	<h3>Check out the reactivity.svelte file for some explanations</h3>
+	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
+		<Reactivity />
+	</div>
+
 </main>
 
 <style>
