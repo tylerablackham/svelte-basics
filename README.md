@@ -2,9 +2,9 @@
 
 ## Some Notes on Svelte
 
-### Svelte is a web framework that allows developers to build web applications by writing components
+Svelte is a web framework that allows developers to build web applications by writing components.
 
-Some defining components of Svelte:
+Here are some defining components of Svelte:
 
 - Reactivity: Svelte components automatically update and re-render when underlying data changes
 - Component-base Architecture: Svelte resolves around the idea of building applications as a composition of 
@@ -44,6 +44,8 @@ look the same.
 You can then navigate into the directory by running `cd new-svelte-app`, install the dependencies by running `npm install`, 
 and then start you Svelte app by running `npm run dev` or navigating to the `package.json` and clicking the button next 
 to dev. After that, you can check out the Svelte tutorial, start adding your own components, and exploring what can be done.
+You can also check out the `examples-svelte-app` which has a lot of different components that show some of the features
+of Svelte.
 
 > **Note**
 > The project just created does not use SvelteKit, the official Svelte framework powered by Vite. There is a tutorial on
