@@ -1,14 +1,21 @@
 <script>
 	import Reactivity from "./reactivity.svelte"
+	import Props from "./props.svelte"
 	export let name;
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<h2>These components help show how reactivity works</h2>
+	<h2>This component helps show how reactivity works</h2>
 	<h3>Check out the reactivity.svelte file for some explanations</h3>
 	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
 		<Reactivity />
+	</div>
+	<h2>This component helps show how props works</h2>
+	<h3>Check out the props.svelte file for some explanations</h3>
+	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
+		<Props number={420} number2={123456789}/>
+		<Props />
 	</div>
 
 </main>

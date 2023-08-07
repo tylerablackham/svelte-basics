@@ -1,10 +1,10 @@
 <!--Here we look at reactivity, here are some examples:
  - count, which reacts to a button click
  - big, which reruns its declaration when any value referenced is changed
- - the console.log statement on line 10 is reactive statement
+ - the console.log statement on line 13 is reactive statement
  - numbersOnReset is an array. the reactivity of arrays and objects work a
     little bit differently. if an array is only mutated, that change will not trigger
-    and update. You can trigger an update by reassigning the array or object as seen on line 21 -->
+    and update. You can trigger an update by reassigning the array or object as seen on line 22 -->
 
 <script>
     let count = 0;
