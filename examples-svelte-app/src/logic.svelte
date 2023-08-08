@@ -46,4 +46,4 @@ at the `user.favColors` markup for an example.
 
 <h4>User's Favorite Colors</h4>
 {#each user.favColors as color, index}
-    <p>- {index}: {color}</p>{/each}
+    <p>{index + 1} - {color}</p>{/each}
