@@ -1,6 +1,7 @@
 <script>
 	import Reactivity from "./reactivity.svelte"
 	import Props from "./props.svelte"
+	import Logic from "./logic.svelte"
 	export let name;
 </script>
 
@@ -16,6 +17,11 @@
 	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
 		<Props number={420} number2={123456789}/>
 		<Props />
+	</div>
+	<h2>This component helps show how logic works</h2>
+	<h3>Check out the logic.svelte file for some explanations</h3>
+	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
+		<Logic/>
 	</div>
 
 </main>
