@@ -7,22 +7,25 @@
 
 <main>
 	<h1>Hello {name}!</h1>
-	<h2>This component helps show how reactivity works</h2>
-	<h3>Check out the reactivity.svelte file for some explanations</h3>
-	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
-		<Reactivity />
+	<div style="display: flex; justify-content: center; justify-content: space-evenly">
+		<div style="outline-style: dashed; outline-color: gray; padding: 1em; max-width: fit-content">
+			<h2>This component helps show how reactivity works</h2>
+			<h3>Check out the reactivity.svelte file for some explanations</h3>
+			<Reactivity />
+		</div>
+		<div style="outline-style: dashed; outline-color: gray; padding: 1em; max-width: fit-content">
+			<h2>This component helps show how props works</h2>
+			<h3>Check out the props.svelte file for some explanations</h3>
+			<Props number={420} number2={123456789}/>
+			<Props />
+		</div>
+		<div style="outline-style: dashed; outline-color: gray; padding: 1em; max-width: fit-content">
+			<h2>This component helps show how logic works</h2>
+			<h3>Check out the logic.svelte file for some explanations</h3>
+			<Logic/>
+		</div>
 	</div>
-	<h2>This component helps show how props works</h2>
-	<h3>Check out the props.svelte file for some explanations</h3>
-	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
-		<Props number={420} number2={123456789}/>
-		<Props />
-	</div>
-	<h2>This component helps show how logic works</h2>
-	<h3>Check out the logic.svelte file for some explanations</h3>
-	<div style="outline-style: dashed; outline-color: gray; padding: 1em">
-		<Logic/>
-	</div>
+
 
 </main>
 
