@@ -5,6 +5,11 @@ select multiple on the page, hold the control key while clicking.
 'innerHTML', 'innerText', 'textContent'. You can learn more about those bindings here:
 https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#Differences_from_innerText
 - As seen in example 3, you can bind to properties inside an each block. This will allow the array to be mutated.
+- <audio> and <video> elements also have properties you can bind to. I'm to lazy to demonstrate this here but you can
+learn more about those bindings here: https://svelte.dev/tutorial/media-elements
+- block-level elements have 'clientWidth', 'clientHeight', 'offsetWidth', and offsetHeight' bindings. They are readonly,
+though which means changing the values bound to them won't do anything. Notice how, in example 4, changing the values of
+'h' and 'w' with the sliders, does not effect the <div> that has those values bound to it.
 -->
 <script>
     let fruits = ['apple','mango','pineapple','banana','grape']
@@ -18,6 +23,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#Differences_fr
         {name: 'passion fruit', eaten: false}]
     function addOtherFruits() {otherFruits = otherFruits.concat({name: '', eaten: false})}
     function eat() {otherFruits = otherFruits.filter((fruit) => !fruit.eaten)}
+
+    let w = 30
+    let h = 10
+    let size = 42
+    let text = 'resize me'
 </script>
 
 <!--Example 1-->
@@ -44,3 +54,16 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#Differences_fr
 {/each}
 <button on:click={addOtherFruits}> Add Other Fruits </button>
 <button on:click={eat}> Clear Eaten </button>
+
+<!--Example 4-->
+<div>
+    <input type="range" bind:value={w} />
+    <input type="range" bind:value={h} />
+</div>
+<div bind:clientWidth={w} bind:clientHeight={h}>
+    <span>{text} ( hint: you can't :) )</span>
+</div>
+<input type="range" bind:value={size} />
+<div>
+    <span style="font-size: {size}px">{text}</span>
+</div>
