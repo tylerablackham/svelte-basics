@@ -10,7 +10,10 @@ learn more about those bindings here: https://svelte.dev/tutorial/media-elements
 - block-level elements have 'clientWidth', 'clientHeight', 'offsetWidth', and offsetHeight' bindings. They are readonly,
 though which means changing the values bound to them won't do anything. Notice how, in example 4, changing the values of
 'h' and 'w' with the sliders, does not effect the <div> that has those values bound to it.
+- The 'this' binding lets you obtain a reference to a rendered element, as seen in Example 5. The value will be
+the component is mounted so you need to put any logic using that value in an onMount lifecycle function.
 -->
+
 <script>
     let fruits = ['apple','mango','pineapple','banana','grape']
     let favFruits = []
@@ -28,6 +31,8 @@ though which means changing the values bound to them won't do anything. Notice h
     let h = 10
     let size = 42
     let text = 'resize me'
+
+    let canvas
 </script>
 
 <!--Example 1-->
@@ -67,3 +72,6 @@ though which means changing the values bound to them won't do anything. Notice h
 <div>
     <span style="font-size: {size}px">{text}</span>
 </div>
+
+<!--Example 5-->
+<canvas bind:this={canvas} width={32} height={32}/>
