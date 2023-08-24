@@ -5,6 +5,7 @@
 	import Events from "./components/events/events.svelte"
 	import Bindings1 from "./components/bindings/bindings-pt1.svelte"
 	import Bindings2 from "./components/bindings/bindings-pt2.svelte"
+	import Bindings3 from "./components/bindings/bindings-pt3.svelte"
 	export let name;
 </script>
 
@@ -46,6 +47,11 @@
 			<h2>This component helps show how bindings work</h2>
 			<h3>Check out the bindings-pt2.svelte file for some explanations</h3>
 			<Bindings2/>
+		</div>
+		<div style="outline-style: dashed; outline-color: gray; padding: 1em; max-width: fit-content">
+			<h2>This component helps show how bindings work</h2>
+			<h3>Check out the bindings-pt3.svelte file for some explanations</h3>
+			<Bindings3/>
 		</div>
 	</div>
 
