@@ -1,0 +1,43 @@
+<!--
+- There are a handful of functions that allow you to run code at different points in a component's lifecycle
+- The 'onMount' function runs when the component is first rendered, as seen with Example 1. It is recommended that fetch
+calls be put in an onMount function so that they can be loaded lazily.
+-->
+<script>
+    import { onMount } from 'svelte';
+
+    let photos = [];
+
+    onMount(async () => {
+        const res = await fetch(`https://svelte.dev/tutorial/api/album`);
+        photos = await res.json();
+    });
+</script>
+<!--Example 1-->
+<h1>Photo album</h1>
+<div class="photos">
+    {#each photos as photo}
+        <figure>
+            <img src={photo.thumbnailUrl} alt={photo.title} />
+            <figcaption>{photo.title}</figcaption>
+        </figure>
+    {:else}
+        <!-- this block renders when photos.length === 0 -->
+        <p>loading...</p>
+    {/each}
+</div>
+
+<style>
+    .photos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 8px;
+    }
+
+    figure,
+    img {
+        width: 100%;
+        margin: 0;
+    }
+</style>
