@@ -6,6 +6,7 @@
 	import Bindings1 from "./components/bindings/bindings-pt1.svelte"
 	import Bindings2 from "./components/bindings/bindings-pt2.svelte"
 	import Bindings3 from "./components/bindings/bindings-pt3.svelte"
+	import Lifecycle from "./components/lifecycle/lifecycle.svelte"
 	export let name;
 </script>
 
@@ -37,7 +38,7 @@
 					on:tickled2={(e) => {alert(e.detail.laugh)}}/>
 		</div>
 	</div>
-	<div style="display: flex; justify-content: center; justify-content: space-evenly">
+	<div style="display: flex; justify-content: center; justify-content: space-evenly; padding-bottom: 3em">
 		<div style="outline-style: dashed; outline-color: gray; padding: 1em; max-width: fit-content">
 			<h2>This component helps show how bindings work</h2>
 			<h3>Check out the bindings-pt1.svelte file for some explanations</h3>
@@ -52,6 +53,13 @@
 			<h2>This component helps show how bindings work</h2>
 			<h3>Check out the bindings-pt3.svelte file for some explanations</h3>
 			<Bindings3/>
+		</div>
+	</div>
+	<div style="display: flex; justify-content: center; justify-content: space-evenly; padding-bottom: 3em">
+		<div style="outline-style: dashed; outline-color: gray; padding: 1em; max-width: fit-content">
+			<h2>This component helps show how lifecyle work</h2>
+			<h3>Check out the lifecycle.svelte file for some explanations</h3>
+			<Lifecycle/>
 		</div>
 	</div>
 
