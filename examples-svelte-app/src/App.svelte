@@ -11,7 +11,7 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<h1>Hello {name}</h1>
 	<div style="display: flex; justify-content: center; justify-content: space-evenly; padding-bottom: 3em">
 		<div style="display: flow; justify-content: center">
 			<div style="outline-style: dashed; outline-color: gray; padding: 1em; max-width: fit-content; margin-bottom: 2em">
